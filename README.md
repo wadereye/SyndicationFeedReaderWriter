@@ -1,3 +1,9 @@
+#更新说明 
+1.本项目是fork https://github.com/dotnet/SyndicationFeedReaderWriter
+2.因为我项目是基于.net core 3.1的版本，所以将项目升级到.net stand2.0,测试基于.net core3.1通过
+
+
+
 # Microsoft.SyndicationFeed.ReaderWriter
 Microsoft.SyndicationFeed.ReaderWriter provides lightweight forward-only read/write APIs (similar to .NET XmlReader) to simplify operations with RSS 2.0 ([spec](http://cyber.harvard.edu/rss/rss.html)) and Atom ([spec](https://tools.ietf.org/html/rfc4287)) syndication feeds. It offers extensiblity to support custom feed elements and formatting. The workflow is async on demand, which enables this library to be used on syndication feeds of arbitrary size or stream latency.
 
