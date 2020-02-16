@@ -275,6 +275,8 @@ namespace Microsoft.SyndicationFeed.Atom
                     //
                     // Author/Contributor
                     case AtomContributorTypes.Author:
+                        item.AddAuthor(CreatePerson(field));
+                        break;
                     case AtomContributorTypes.Contributor:
                         item.AddContributor(CreatePerson(field));
                         break;

@@ -13,6 +13,7 @@ namespace Microsoft.SyndicationFeed
         private ICollection<ISyndicationCategory> _categories;
         private ICollection<ISyndicationPerson> _contributors;
         private ICollection<ISyndicationLink> _links;
+        private ISyndicationPerson _authors;
 
         public SyndicationItem()
         {
@@ -62,6 +63,14 @@ namespace Microsoft.SyndicationFeed
             }
         }
 
+        public ISyndicationPerson Author
+        {
+            get
+            {
+                return _authors;
+            }
+        }
+
         public IEnumerable<ISyndicationLink> Links 
         {
             get {
@@ -72,6 +81,7 @@ namespace Microsoft.SyndicationFeed
         public DateTimeOffset LastUpdated { get; set; }
 
         public DateTimeOffset Published { get; set; }
+        
 
         public void AddCategory(ISyndicationCategory category)
         {
@@ -94,14 +104,24 @@ namespace Microsoft.SyndicationFeed
             {
                 throw new ArgumentNullException(nameof(person));
             }
-
             if (_contributors.IsReadOnly)
             {
                 _contributors = _contributors.ToList();
             }
-
             _contributors.Add(person);
+           
         }
+
+        public void AddAuthor(ISyndicationPerson person)
+        {
+            if (person == null)
+            {
+                throw new ArgumentNullException(nameof(person));
+            }
+            _authors = person;
+        }
+
+
 
         public void AddLink(ISyndicationLink link)
         {

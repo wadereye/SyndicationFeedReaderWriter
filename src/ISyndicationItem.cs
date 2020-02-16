@@ -15,6 +15,12 @@ namespace Microsoft.SyndicationFeed
 
         string Description { get; }
 
+        //根据https://tools.ietf.org/html/rfc4287规范，添加了Author,Contributor
+        /// <summary>
+        /// 作者
+        /// </summary>
+        ISyndicationPerson Author { get; }  
+
         IEnumerable<ISyndicationCategory> Categories { get; }
 
         IEnumerable<ISyndicationPerson> Contributors { get; }

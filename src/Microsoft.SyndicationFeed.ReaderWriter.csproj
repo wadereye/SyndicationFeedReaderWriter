@@ -11,6 +11,8 @@
     <Authors>Microsoft.SyndicationFeed.ReaderWriter</Authors>
     <PackageId>Wadereye.SyndicationFeed.ReaderWriter</PackageId>
     <Description>将原作者的包做了测试，并升级到.net stand 2.0,基于.net core 3.1进行了测试</Description>
+    <AssemblyVersion>1.2.10.0</AssemblyVersion>
+    <FileVersion>1.2.10.0</FileVersion>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="MicroBuild.Core" Version="$(MicroBuildVersion)" />
