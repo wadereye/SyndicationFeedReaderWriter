@@ -7,7 +7,7 @@
     <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
     <PackagingToolsInsufficientSDKVersion>false</PackagingToolsInsufficientSDKVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.2</Version>
+    <Version>1.2.10</Version>
     <Authors>Microsoft.SyndicationFeed.ReaderWriter</Authors>
     <PackageId>Wadereye.SyndicationFeed.ReaderWriter</PackageId>
     <Description>将原作者的包做了测试，并升级到.net stand 2.0,基于.net core 3.1进行了测试</Description>
